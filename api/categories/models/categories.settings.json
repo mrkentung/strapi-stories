@@ -15,9 +15,9 @@
     "slug": {
       "type": "string"
     },
-    "story": {
-      "model": "stories",
-      "via": "category"
+    "stories": {
+      "via": "category",
+      "collection": "stories"
     }
   }
 }

@@ -19,7 +19,8 @@
       "type": "richtext"
     },
     "publish": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "cover": {
       "model": "file",
@@ -32,10 +33,6 @@
       "plugin": "upload",
       "required": false
     },
-    "category": {
-      "via": "story",
-      "model": "categories"
-    },
     "excerpt": {
       "type": "text"
     },
@@ -47,6 +44,10 @@
     "featured": {
       "type": "boolean",
       "default": false
+    },
+    "category": {
+      "model": "categories",
+      "via": "stories"
     }
   }
 }
